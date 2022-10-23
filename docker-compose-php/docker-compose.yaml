@@ -10,8 +10,6 @@ services:
         - MYSQL_USER=petclinic
         - MYSQL_PASSWORD=petclinic
         - MYSQL_DATABASE=petclinic
-      volumes:
-        - "./conf.d:/etc/mysql/conf.d:ro"
     phpmyadmin:
       image: phpmyadmin
       restart: always
